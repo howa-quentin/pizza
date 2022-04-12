@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+}
+
+ul{
+  background-image: url("../img/searchbar.png");
+  text-align: right;
+  padding-top: 5px;
+  border-bottom-style: solid;
+  border-color: darkred;
+}
+
+h1 {
+  font-family: Helvetica;
+  color: white;
+  background-image: url("../img/searchbar.png");
+  font-size: 50px;
+  padding-left: 10px;
+  letter-spacing: 3px;
+  border-top-style: solid;
+  border-color: darkred;
+}
+
+ul li a {
+  font-family: Helvetica;
+  border-radius: 5px;
+  font-size: 20px;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  color: darkred;
+}
+
+ul li, ul li a {
+  padding: 10px;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+h2 {
+  color: white;
+  text-align: justify;
+  letter-spacing: 3px;
+  width: 40%;
+  margin: auto;
+  padding-bottom: 4%;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+.home {
+  background-image: url("../img/backpizza.jpg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.order {
+  background-image: url("../img/homeimage.jpeg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+  background-image: url("../img/makinpizza.jpeg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact {
+  background-image: url("../img/contact.jpeg");
+  background-position: top, bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ .dealOpt {
+  padding-left: 16%; 
+  padding-top: 10%;
+ }
+
+.mission:hover {
+  transform: scale(1.5);
+}
+
+.container {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  width: 30%;
+  background-image: url("../img/ripples.png");
+}
+
+input[type=submit], input[type=reset] {
+  background-color: lightcoral;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  transition: 3s;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+  background-color: darkred;
+  transform: scale(1);
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+.mission {
+  color: white;
+  text-indent: 50px;
+  letter-spacing: 3px;
+  width: 50%;
+  margin: auto;
+  padding: 25px;
+  background-color: black;
+  opacity: .7;
+  transition: 7s;
+}
+
+.pos{
+  padding-top: 10%;
+}
+
+.order {
+
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Order</title>
+</head>
+<body class="order">
+
+	<h1>Order</h1>
+
+	<ul>
+		<li><a href="https://howaquentin.com/pizza-2/index.html">Home</a></li>
+		<li><a href="https://howaquentin.com/pizza-2/order.html">Order</a></li>
+		<li><a href="https://howaquentin.com/pizza-2/about.html">About</a></li>
+		<li><a href="https://howaquentin.com/pizza-2/contact.html">Contact</a></li>
+	</ul>
+
+<div class="container">
+	<form method="POST" action="https://www.stonecoldprofessor.com/pizza-order.php" class="orderForm">
+
+		<label for="sizes">Size: </label>
+		<select name="size" id="sizes">
+			<option value="sml">Small</option>
+			<option value="med">Medium</option>
+			<option value="lrg">Large</option>
+			<option value="clg">Crazy Large</option>
+		</select><br>
+
+		<table>
+  			<tr>
+  				<td>
+					<input type="checkbox" id="olives" name="toppings[]" value="olives">
+					<label for="olives">Olives</label>
+					<img class="toppings" src="img/olives.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="sausage" name="toppings[]" value="sausage">
+					<label for="olives">Sausage</label>
+					<img class="toppings" src="img/sausage.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="pepperoni" name="toppings[]" value="pepperoni">
+					<label for="olives">Pepperoni</label>
+					<img class="toppings" src="img/pep.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="mushrooms" name="toppings[]" value="mushrooms">
+					<label for="olives">Mushrooms</label>
+					<img class="toppings" src="img/mushroom.jpeg" width="100px" height="100px">
+				</td>
+			</tr><br>
+			<tr>
+				<td>
+					<input type="checkbox" id="bacon" name="toppings[]" value="bacon">
+					<label for="olives">Bacon</label>
+					<img class="toppings" src="img/bacon.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="peppers" name="toppings[]" value="peppers">
+					<label for="olives">Peppers</label>
+					<img class="toppings" src="img/peppers.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="pineapple" name="toppings[]" value="pineapple">
+					<label for="olives">Pineapple</label>
+					<img class="toppings" src="img/pineapple.jpeg" width="100px" height="100px">
+				</td>
+				<td>
+					<input type="checkbox" id="ham" name="toppings[]" value="ham">
+					<label for="olives">Ham</label>
+					<img class="toppings" src="img/ham.jpeg" width="100px" height="100px">
+				</td>
+			</tr>
+		</table>
+
+		<input type="radio" id="thin" name="crust" value="thin">
+		<label for="thin">Thin</label>
+		<input type="radio" id="regular" name="crust" value="regular">
+		<label for="thin">Regular</label>
+		<input type="radio" id="thick" name="crust" value="thick">
+		<label for="thin">Thick</label>
+		<input type="radio" id="pan" name="crust" value="pan">
+		<label for="thin">Pan</label><br>
+
+		<label for="address">Address:</label>
+		<input type="street" id="address" placeholder="Street" name="street" required>
+  		<input type="city" id="address" placeholder="City" name="city" required><br>
+  		<label for="state">State: </label>
+  		<select name="state" id="state" required>
+			<option value="AL">Alabama</option>
+			<option value="AK">Alaska</option>
+			<option value="AZ">Arizona</option>
+			<option value="AR">Arkansas</option>
+			<option value="CA">California</option>
+			<option value="CO">Colorado</option>
+			<option value="CT">Connecticut</option>
+			<option value="DE">Delaware</option>
+			<option value="DC">District Of Columbia</option>
+			<option value="FL">Florida</option>
+			<option value="GA">Georgia</option>
+			<option value="HI">Hawaii</option>
+			<option value="ID">Idaho</option>
+			<option value="IL">Illinois</option>
+			<option value="IN">Indiana</option>
+			<option value="IA">Iowa</option>
+			<option value="KS">Kansas</option>
+			<option value="KY">Kentucky</option>
+			<option value="LA">Louisiana</option>
+			<option value="ME">Maine</option>
+			<option value="MD">Maryland</option>
+			<option value="MA">Massachusetts</option>
+			<option value="MI">Michigan</option>
+			<option value="MN">Minnesota</option>
+			<option value="MS">Mississippi</option>
+			<option value="MO">Missouri</option>
+			<option value="MT">Montana</option>
+			<option value="NE">Nebraska</option>
+			<option value="NV">Nevada</option>
+			<option value="NH">New Hampshire</option>
+			<option value="NJ">New Jersey</option>
+			<option value="NM">New Mexico</option>
+			<option value="NY">New York</option>
+			<option value="NC">North Carolina</option>
+			<option value="ND">North Dakota</option>
+			<option value="OH">Ohio</option>
+			<option value="OK">Oklahoma</option>
+			<option value="OR">Oregon</option>
+			<option value="PA">Pennsylvania</option>
+			<option value="RI">Rhode Island</option>
+			<option value="SC">South Carolina</option>
+			<option value="SD">South Dakota</option>
+			<option value="TN">Tennessee</option>
+			<option value="TX">Texas</option>
+			<option value="UT">Utah</option>
+			<option value="VT">Vermont</option>
+			<option value="VA">Virginia</option>
+			<option value="WA">Washington</option>
+			<option value="WV">West Virginia</option>
+			<option value="WI">Wisconsin</option>
+			<option value="WY">Wyoming</option>
+		</select>
+        <input type="zip" id="address" placeholder="Zip" name="zip" required><br>
+
+        <label for="email">Email:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br>
+
+		<label for="comments">Comments:</label>
+		<textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+		<input type="reset" name="reset">
+		<input type="submit" name="submit">
+
+	</form>
+</div>
+
+</body>
+</html>
